@@ -1,15 +1,24 @@
+require('@rushstack/eslint-patch/modern-module-resolution');
+
 module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: ['google'],
   globals: {
+    $: true,
     after: true,
     afterEach: true,
     before: true,
     beforeEach: true,
+    d3: true,
     define: true,
     describe: true,
     document: true,
-    d3: true,
-    exports: true,
     driver: true,
+    exports: true,
     global: true,
     gulp: true,
     it: true,
@@ -27,26 +36,16 @@ module.exports = {
     test: true,
     topojson: true,
     webdriver: true,
-    $: true,
-  },
-  env: {
-    browser: true,
-    node: true,
-    es6: true,
   },
   parserOptions: {
-    ecmaVersion: 9,
-    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
+    ecmaVersion: 9,
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
   },
-  extends: ['google'],
   plugins: ['react', 'json-format'],
-  settings: {
-    'json/sort-package-json': false,
-    'json/ignore-files': ['**/package-lock.json', '**/npm-shrinkwrap.json', '**/npm-shrinkwrap.json-prod'],
-  },
   rules: {
     'arrow-spacing': 'error',
     'block-spacing': 'off',
@@ -79,7 +78,10 @@ module.exports = {
     'max-depth': ['error', 9],
     'max-len': 'off',
     'max-lines': ['error', 1000],
-    'max-lines-per-function': ['error', { max: 1000, skipBlankLines: true, skipComments: true }],
+    'max-lines-per-function': [
+      'error',
+      { max: 1000, skipBlankLines: true, skipComments: true },
+    ],
     'max-nested-callbacks': ['error', 10],
     'max-params': ['error', 14],
     'new-cap': 'off',
@@ -139,5 +141,13 @@ module.exports = {
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': 'error',
     'spaced-comment': ['error', 'always', { block: { balanced: true } }],
+  },
+  settings: {
+    'json/sort-package-json': false,
+    'json/ignore-files': [
+      '**/package-lock.json',
+      '**/npm-shrinkwrap.json',
+      '**/npm-shrinkwrap.json-prod',
+    ],
   },
 };

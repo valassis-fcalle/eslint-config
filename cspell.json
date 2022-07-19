@@ -1,17 +1,23 @@
 {
-  "ignorePaths": ["node_modules"],
+  "ignorePaths": [
+    "node_modules"
+  ],
   "words": [
     "calle",
+    "camelcase",
     "capi",
     "commitlint",
     "eudev",
     "fcalle",
     "imagemin",
+    "linebreak",
     "markdownlint",
     "parens",
     "postcss",
     "savi",
+    "stroustrup",
     "stylelint",
+    "topojson",
     "valassis"
   ]
 }

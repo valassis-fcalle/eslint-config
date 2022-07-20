@@ -15,4 +15,4 @@ and including those dependencies in the projects using this configurations.
 
 ## TODO
 
--[ ] Use semantice-release action for versioning - https://github.com/marketplace/actions/action-for-semantic-release
+- [ ] Use semantice-release action for versioning - https://github.com/marketplace/actions/action-for-semantic-release

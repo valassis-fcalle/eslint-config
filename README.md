@@ -11,3 +11,8 @@ and including those dependencies in the projects using this configurations.
 * [ESLint shareable configs](https://eslint.org/docs/latest/developer-guide/shareable-configs)
 * [Support having plugins as dependencies in shareable config](https://github.com/eslint/eslint/issues/3458)
 * [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch)
+
+
+## TODO
+
+[] Use semantice-release action for versioning - https://github.com/marketplace/actions/action-for-semantic-release
